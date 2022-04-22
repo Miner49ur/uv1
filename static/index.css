@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+  font-family: Roboto;
+  user-select: none;
+}
+
+header{
+  height: 90px;
+}
+
+nav a {
+    cursor: pointer;
+    color: "white";
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    height: 90px;
+    display: block;
+    background: #292929;
+    box-shadow: 0px 1px 8px rgb(0 0 0 / 15%);
+}
+
+.nav-icon {
+    position: relative;
+    float: left;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.small-nav-icon {
+    height: 70px;
+}
+
+.nav-items {
+    position: relative;
+    float: right;
+    margin: 0;
+    padding-right: 20px;
+    line-height: 90px;
+    list-style: none;
+    transition: 0.2s linear all;
+}
+
+.nav-items > span {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s linear all;
+}
+
+body {
+  margin: 0;
+  background: #141418;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  animation: fadeInAnimation ease-in-out 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.content {
+  margin-top: 90px;
+  display: grid;
+  top: 15%;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+  border-radius: 200px;
+  pointer-events:none;
+}
+
+.context-menu {
+    position: absolute;
+    text-align: center;
+    background: lightgray;
+    border: 1px solid black;
+}
+
+.context-menu ul {
+    padding: 0px;
+    margin: 0px;
+    min-width: 150px;
+    list-style: none;
+}
+
+.context-menu ul li {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border: 1px solid black;
+}
+
+.context-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.context-menu ul li:hover {
+    background: darkgray;
+}
+
+#particles-js{
+  width: 100%;
+  height: calc(100% - 90px);
+  background-color: #141418;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.particles-js-canvas-el{
+  position: absolute;
+  display:block;
+  vertical-align:bottom;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0%;
+    border-radius: 200px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo-wrapper .text {
+    font-size: 75px;
+    font-family: "Roboto";
+    color: #FFF;
+    center: true;
+}
+
+.logo-wrapper h1 {
+    color: white;
+}
+
+footer {
+  margin-bottom: -4%;
+  width: 97%;
+  align-self: end;
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+}
+
+footer a, footer div {
+    font-family: Roboto;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+}
+
+.desc p {
+    align-self: center;
+    color: rgba(253, 253, 253, 0.514);
+}
+
+form input {
+    background: none;
+    font-family: inherit;
+    padding: 0px 17px;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255, .2);
+    color: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+    width: 350px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: #FFF;
+    pointer-events: all;
+}
+
+form input:focus {
+    border: 1px solid rgba(253, 253, 253, 0.514);
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+button {
+  font-family: "Roboto";
+  padding: 0.6em 2em;
+  margin-top: 5px;
+  border: 2px;
+  outline: 2px;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  background: #303030;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  width: auto;
+  transition-duration: 0.4s;
+  font-size: 10;
+  pointer-events: all;
+}

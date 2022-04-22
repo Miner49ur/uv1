@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="https://lms.fcps.edu/sites/all/themes/schoology_theme/favicon.ico" />
+    <title>Schoology</title
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link href="index.css" rel="stylesheet">
+    <link href="loader.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F4RTLWB0F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6F4RTLWB0F');
+    </script>
+</head>
+
+<body onload="buttoncheck();">
+  <script src="main.js"></script>
+
+  <iframe target="_self" src="about:blank" class="access-frame" onload="removeLoader();" style="position: absolute; overflow-x: hidden; width: 100%; height: 100%; display: none; border: none; background: #FFF;"></iframe>
+  
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+  <div class="content" id="hide">
+    <div class="logo-wrapper">
+        <img class="logo" src="./uv.png"
+            alt="" />
+        <h1>Ultraviolet</h1>
+    </div>
+    
+    <div class="desc">
+        <p>Use this web proxy to access any blocked site freely!</p>
+    </div>
+    
+    <form>
+        <input placeholder="Enter url here" list="defaults" autocomplete="off">
+    </form>
+    
+    <button id="histhidebutton" title='Warning! Does not work with links!' onclick="histhide()">History Hider (Does NOT work with links!)</button>
+    
+    <datalist id="defaults">
+      <option value="https://play.geforcenow.com">Geforce Now</option>
+      <option value="https://ubg100.bitbucket.io/games.html">UBG100</option>
+      <option value="https://s2dfree.de">Soap2day Movies</option>
+      <option value="https://discord.com">Discord</option>
+    </datalist>
+  </div>
+
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="index.js"></script>
+  <script src="main.js"></script>
+  <script src="particles.js"></script>
+  <script src="particlesapp.js"></script>
+</body>
+
+</html>
